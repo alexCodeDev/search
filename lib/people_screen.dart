@@ -60,7 +60,7 @@ class PeopleScreen extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.w700),
           ),
           subtitle: Text(
-              'Userov Account'
+              'Userov Accounte'
           ),
         ),
       ),
