@@ -39,13 +39,16 @@ class MainScreen extends StatelessWidget {
 
                   ),
 
-                  TabBarView(
-                      controller: tabController,children: <Widget>[
-                    PostsScreen(),
-                    NewsScreen(),
-                    PeopleScreen(),
-                    CommunityScreen(),
-                  ]),
+                  Container(
+                    margin: EdgeInsets.only(top: 20),
+                    child: TabBarView(
+                        controller: tabController,children: <Widget>[
+                      PostsScreen(),
+                      NewsScreen(),
+                      PeopleScreen(),
+                      CommunityScreen(),
+                    ]),
+                  ),
                 ],
               )
           ),
