@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:search_new/community_screen.dart';
-import 'package:search_new/news_screen.dart';
-import 'package:search_new/people_screen.dart';
-import 'package:search_new/posts_screen.dart';
-import 'package:search_new/home_page.dart';
+import 'package:search_new/pages/community_screen.dart';
+import 'package:search_new/pages/news_screen.dart';
+import 'package:search_new/pages/people_screen.dart';
+import 'package:search_new/pages/posts_screen.dart';
 
 
 class MainScreen extends StatelessWidget {

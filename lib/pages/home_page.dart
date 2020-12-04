@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:search_new/mainscreen_page.dart';
+import 'package:search_new/pages/mainscreen_page.dart';
+import 'package:search_new/widgets/search.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -27,12 +28,16 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        leading: IconButton(icon: Icon(Icons.search), onPressed: () {}),
-        actions: <Widget>[
-          IconButton(icon: Icon(Icons.close), onPressed: () {}),
-        ],
+      // appBar: AppBar(
+      //   centerTitle: true,
+      //   leading: IconButton(icon: Icon(Icons.search), onPressed: () {}),
+      //   actions: <Widget>[
+      //     IconButton(icon: Icon(Icons.close), onPressed: () {}),
+      //   ],
+      // ),
+      appBar: PreferredSize(
+        child: SearchScreen(),
+        preferredSize: Size(double.infinity, 56),
       ),
       body: MainScreen(),
       bottomNavigationBar: BottomNavigationBar(
